@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shardex Bot Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: white;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background: #141414;
+    position: fixed;
+    padding-top: 30px;
+    border-right: 2px solid #ff6600;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo img {
+    width: 80px;
+    border-radius: 50%;
+    border: 3px solid #ff6600;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar ul li:hover {
+    background: #ff6600;
+}
+
+/* Main Content */
+.main {
+    margin-left: 240px;
+    padding: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #ff6600;
+}
+
+.btn {
+    background: #ff6600;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff8533;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #ff6600;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #ff6600;
+}
+
+.card h2 {
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #aaa;
+}
+
+/* Footer */
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #666;
+}
+
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="logo">
+        <img src="logo.png" alt="Bot Logo">
+        <h3 style="margin-top:10px;">SHARDEX</h3>
+    </div>
+    <ul>
+        <li>Dashboard</li>
+        <li>Servers</li>
+        <li>Moderation</li>
+        <li>Settings</li>
+        <li>Premium</li>
+    </ul>
+</div>
+
+<div class="main">
+    <div class="header">
+        <h1>Bot Dashboard</h1>
+        <button class="btn">Invite Bot</button>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h2>Total Servers</h2>
+            <p>128 Servers Connected</p>
+        </div>
+
+        <div class="card">
+            <h2>Total Users</h2>
+            <p>52,430 Users</p>
+        </div>
+
+        <div class="card">
+            <h2>Commands Used</h2>
+            <p>15,902 Commands</p>
+        </div>
+
+        <div class="card">
+            <h2>Status</h2>
+            <p style="color: #00ff88;">Online</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 Shardex Bot | All Rights Reserved
+    </div>
+</div>
+
+</body>
+</html>
